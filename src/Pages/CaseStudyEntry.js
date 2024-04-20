@@ -70,6 +70,7 @@ function CaseStudyEntry() {
                         width="300"
                         key={index}
                         style={{margin: "2px"}}
+
                         alt=""
                     />
                 ))}
