@@ -77,6 +77,9 @@ function CaseStudyEntry() {
                 {isViewerOpen && (
                     <ImageViewer
                         src={images}
+
+
+
                         currentIndex={currentImage}
                         onClose={closeImageViewer}
                         disableScroll={false}
