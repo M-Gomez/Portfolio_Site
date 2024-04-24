@@ -1,0 +1,21 @@
+pipeline {
+    agent {node {label 'portfolio-agent'}}
+
+    stages {
+        stage('Build') {
+            steps {
+                npm install --force
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                npm start
+            }
+        }
+    }
+}
