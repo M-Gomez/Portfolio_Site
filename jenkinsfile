@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'yes | sudo apt install --force-yes npm'
+                sh 'yes | sudo apt install --force-yes --fix-missing npm'
                 sh 'npm install --force'
             }
         }
