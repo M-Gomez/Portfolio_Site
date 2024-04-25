@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'npm start -- --port 9091'
+                sh 'HOST=0.0.0.0 npm run start -- --port 9091'
             }
         }
     }
