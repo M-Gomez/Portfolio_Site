@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo apt install -f npm'
+                sh 'yes | sudo apt install --force-yes npm'
                 sh 'npm install --force'
             }
         }
