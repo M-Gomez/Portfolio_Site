@@ -4,15 +4,17 @@ import {Button, ButtonGroup, Slide} from "@mui/material";
 import SWEBody from "./SWEBody";
 import ImageViewer from "react-simple-image-viewer";
 import textStrings from '../text.json';
+import ac1gif from '../ProjectAssets/ACApp/ACAppGif.gif';
+import ac1 from '../ProjectAssets/ACApp/ACApp1.PNG';
+import ac2 from '../ProjectAssets/ACApp/ACApp2.PNG';
+import ac3 from '../ProjectAssets/ACApp/ACApp3.PNG';
 
 function ACTrackerPortfolioEntry() {
     const images = [
-        "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDJqY3JqMGY4dGt3Z21laWZpOWw5am5qd3JuczZ5bng3cWVycWs4ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/139eZBmH1HTyRa/giphy.gif",
-        "https://placehold.co/1920x1080",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
+        ac1gif,
+        ac1,
+        ac2,
+        ac3
     ];
     const [currentImage, setCurrentImage] = useState(0);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -35,7 +37,7 @@ function ACTrackerPortfolioEntry() {
                 <img
                     src={src}
                     onClick={() => openImageViewer(index)}
-                    width="300"
+                    width="500"
                     key={index}
                     style={{margin: "2px"}}
                     alt=""

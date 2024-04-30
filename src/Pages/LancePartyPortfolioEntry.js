@@ -4,15 +4,22 @@ import {Button, ButtonGroup, Slide} from "@mui/material";
 import SWEBody from "./SWEBody";
 import ImageViewer from "react-simple-image-viewer";
 import textStrings from '../text.json';
+import lp1gif from '../ProjectAssets/LanceParty/lp1.gif';
+import lp2gif from '../ProjectAssets/LanceParty/lp2.gif';
+import lp3gif from '../ProjectAssets/LanceParty/lp3.gif';
+import lp4gif from '../ProjectAssets/LanceParty/lp4.gif';
+import lp5gif from '../ProjectAssets/LanceParty/lp5.gif';
+import lp6gif from '../ProjectAssets/LanceParty/lp6.gif';
 
 function ACTrackerPortfolioEntry() {
     const images = [
-        "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDJqY3JqMGY4dGt3Z21laWZpOWw5am5qd3JuczZ5bng3cWVycWs4ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/139eZBmH1HTyRa/giphy.gif",
-        "https://placehold.co/1920x1080",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
+        lp1gif,
+        lp2gif,
+        lp3gif,
+        lp4gif,
+        lp5gif,
+        lp6gif,
+
     ];
     const [currentImage, setCurrentImage] = useState(0);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -35,7 +42,7 @@ function ACTrackerPortfolioEntry() {
                     <img
                         src={src}
                         onClick={() => openImageViewer(index)}
-                        width="300"
+                        width="700"
                         key={index}
                         style={{margin: "2px"}}
                         alt=""

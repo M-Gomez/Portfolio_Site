@@ -4,15 +4,12 @@ import {Button, ButtonGroup, Slide} from "@mui/material";
 import SWEBody from "./SWEBody";
 import ImageViewer from "react-simple-image-viewer";
 import textStrings from '../text.json';
+import web31 from '../ProjectAssets/Web3Welcome/Web3Welcome.png';
+
 
 function ACTrackerPortfolioEntry() {
     const images = [
-        "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDJqY3JqMGY4dGt3Z21laWZpOWw5am5qd3JuczZ5bng3cWVycWs4ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/139eZBmH1HTyRa/giphy.gif",
-        "https://placehold.co/1920x1080",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
-        "https://placehold.co/1600x900",
+        web31
     ];
     const [currentImage, setCurrentImage] = useState(0);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -43,7 +40,7 @@ function ACTrackerPortfolioEntry() {
                     <img
                         src={src}
                         onClick={() => openImageViewer(index)}
-                        width="300"
+                        width="900"
                         key={index}
                         style={{margin: "2px"}}
                         alt=""
