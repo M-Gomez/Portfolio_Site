@@ -1,12 +1,10 @@
-// src/components/Footer.js
 import React, {useCallback, useState} from 'react';
 import ConversationalText from "react-conversational-text";
-import ImageViewer from "react-simple-image-viewer";
 import {Button, ButtonGroup, FormControlLabel, Slide, Switch} from "@mui/material";
-import SWEBody from "./SWEBody";
 import ACTrackerPortfolioEntry from "./ACTrackerPortfolioEntry";
 import LancePartyPortfolioEntry from "./LancePartyPortfolioEntry";
 import FXAppPortfolioEntry from "./FXAppPortfolioEntry";
+import Web3Page from "./Web3Page";
 
 
 function PortfolioBody() {
@@ -35,7 +33,10 @@ function PortfolioBody() {
                     <Button onClick={() => handleChange("HVAC App")}>HVAC Managerial App</Button>
                     <Button onClick={() => handleChange("Lance Party")}>Lance Party</Button>
                     <Button onClick={() => handleChange("Library App")}>Library JavaFX Crud App</Button>
-                </ButtonGroup>
+                        <Button onClick={() => handleChange("Web3")}>Web3 Welcome Page</Button>
+
+                    </ButtonGroup>
+                    <div style={{marginTop: 20}}>
                     <Slide direction="left" in={selectedProj=="HVAC App"} mountOnEnter unmountOnExit>
                         <div align={"center"}>
                         <ACTrackerPortfolioEntry></ACTrackerPortfolioEntry>
@@ -51,6 +52,12 @@ function PortfolioBody() {
                             <FXAppPortfolioEntry></FXAppPortfolioEntry>
                         </div>
                     </Slide>
+                    <Slide direction="left" in={selectedProj == "Web3"} mountOnEnter unmountOnExit>
+                        <div align={"center"}>
+                            <Web3Page></Web3Page>
+                        </div>
+                    </Slide>
+                </div>
 
                 </div>
             </div>

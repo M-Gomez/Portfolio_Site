@@ -56,13 +56,17 @@ function Header() {
                             </div>
                         </Tooltip>
                 </a>
-                    <a href="https://github.com/M-Gomez">
+                    <a href="https://docs.google.com/document/d/1iRxykucyy-NkGDsdEgjY4OT9RPajMOQ-7iZQwrAsWnY/edit?usp=sharing">
+                        <Tooltip title="Resume" arrow
+                                 TransitionProps={{ timeout: 300 }}
+                        >
                         <FaInfo style={{
                             fontSize: 55,
                             display: "inline-block",
                             marginRight: "15px",
                             paddingBottom: "3px"
                         }}></FaInfo>
+                        </Tooltip>
                     </a>
 
                 </ul>

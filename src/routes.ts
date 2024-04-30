@@ -15,11 +15,11 @@ export const routes = [
         href: "/portfolio/software",
         Icon: FaChalkboardUser,
     },
-    {
+/** {
         title: "Case Studies",
         href: "casestudies",
         Icon: FaBookOpenReader,
-    },
+    },*/
    /** {
         title: "Contact",
         href: "contact",
