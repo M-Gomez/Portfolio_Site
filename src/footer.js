@@ -8,7 +8,7 @@ function Footer() {
             <div style={{}}>
                 <h3> Made using <FaReact style={{}}/></h3>
             </div>
-            <p>© Lonestar Software Solutions 2024</p>
+            <p>© Manuel Gomez IV 2024</p>
         </footer>
     );
 }
